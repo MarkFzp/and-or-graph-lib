@@ -1,0 +1,27 @@
+digraph g {
+	10[label="10", name="10_10", shape="oval", color="#8888ff", STC="S", style="bold", AO="O"];
+    3[label="3", name="3_3", shape="oval", color="#8888ff", STC="S", style="bold", AO="A"];
+    3 -> 7;
+    2[label="2", name="2_2", shape="oval", color="#8888ff", STC="S", style="filled", AO="A"];
+    2 -> 3 [position=-1];
+    2 -> 4 [position=1];
+    1[label="1", name="1_1", shape="oval", color="#8888ff", STC="S", style="bold", AO="A"];
+    1 -> 8 [position=0, probability=0.1];
+    0[label="0", name="0_0", shape="oval", color="#8888ff", STC="S", style="filled", AO="A"];
+    0 -> 1 [position=1];
+    0 -> 2 [position=-1];
+    4[label="4", name="4_4", shape="oval", color="#8888ff", STC="S", style="filled", AO="O"];
+    4 -> 5 [position=-1, probability=0.3];
+    4 -> 6 [position=1, probability=0.7];
+    5[label="5", name="5_5", shape="oval", color="#8888ff", STC="S", style="bold", AO="O"];
+    6[label="6", name="6_6", shape="oval", color="#8888ff", STC="S", style="filled", AO="O"];
+    7[label="7", name="7_7", shape="oval", color="#8888ff", STC="S", style="bold", AO="O"];
+    8[label="8", name="8_8", shape="oval", color="#8888ff", STC="S", style="filled", AO="O"];
+    1 -> 9 [position=-1, probability=0.6];
+    1 -> 10 [position=1, probability=0.3];
+    1 -> 11 [position=-3, probability=0.3];
+    1 -> 12 [position=-2, probability=0.3];
+    9[label="9", name="9_9", shape="oval", color="#8888ff", STC="S", style="bold", AO="O"];
+    11[label="11", name="11_11", shape="oval", color="#8888ff", STC="S", style="bold", AO="O"];
+    12[label="12", name="12_12", shape="oval", color="#8888ff", STC="S", style="bold", AO="O"];
+}

@@ -1,0 +1,116 @@
+body {
+  overflow: scroll; /*hidden; */
+  margin: 0;
+  font: 14px "Helvetica Neue";
+}
+
+/* svg {
+  width: 680px;
+  height: 800px;
+} */
+
+#chart, #header {
+  position: absolute;
+  top: 60px;
+}
+
+#header {
+  z-index: 1;
+  display: block;
+}
+
+#header {
+  top: 50px;
+  left: 100px;
+  font: 300 36px "Times New Roman"; /* "Helvetica Neue"; */
+}
+
+#footer {
+    position: absolute;
+    top: 500px;
+    width: 100px;
+}
+
+#arrow0 {
+    fill: #66ccff;
+}
+
+#arrow1 {
+    fill: red;
+}
+
+rect {
+  fill: none;
+  pointer-events: all;
+}
+
+pre {
+  font-size: 18px;
+}
+
+circle {
+	fill: #ccc;
+	stroke: #566573;
+	stroke-width: 1px;
+}
+
+line {
+  stroke: #66ccff;
+  stroke-width: 3px;
+}
+
+/*path {*/
+    /*fill: #66ccff;*/
+/*}*/
+
+text {
+    fill: #000;
+    font-family: "Times New Roman", sans-serif;
+    font-size: medium;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+.string, .regexp {
+  color: #f39;
+}
+
+.keyword {
+  color: #00c;
+}
+
+.comment {
+  color: #555;
+}
+
+.number {
+  color: #369;
+}
+
+.class, .special {
+  color: #1181B8;
+}
+
+/* File uploader */
+#inSelector {
+  padding: 3px 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: #ddd;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Tooltip setting */
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: #EBF5FB;
+    border: 0px;
+    border-radius: 8px;
+    /*  pointer-events: none;    This line needs to be removed */
+}
